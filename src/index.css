@@ -1,0 +1,35 @@
+@import "tailwindcss";
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+
+/* styles.css */
+body.light {
+  background-color: white;
+  color: black;
+}
+body.dark {
+  background-color: #111;
+  color: white;
+}
+
+:root {
+  --colorNeutral-9: hsl(227, 75%, 14%);
+  --colorNeutral-8: hsl(226, 25%, 17%);
+  --colorNeutral-7: hsl(225, 23%, 24%);
+  --colorNeutral-6: hsl(226, 11%, 37%);
+  --colorNeutral-3: hsl(0, 0%, 78%);
+  --colorNeutral-2: hsl(217, 61%, 90%);
+  --colorNeutral-1: hsl(0, 0%, 93%);
+  --colorNeutral-0: hsl(200, 60%, 99%);
+
+  --colorRed-4: hsl(3, 86%, 64%);
+  --colorRed-5: hsl(3, 71%, 56%);
+  --colorRed-7: hsl(3, 77%, 44%);
+
+  -colorlightgradient: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
+
+  --colorDarkgradient: linear-gradient(180deg, #040918 0%, #091540 100%);
+}
