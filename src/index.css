@@ -5,31 +5,34 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 
-/* styles.css */
-body.light {
-  background-color: white;
-  color: black;
-}
-body.dark {
-  background-color: #111;
-  color: white;
-}
-
+/* Light Mode Variables */
 :root {
-  --colorNeutral-9: hsl(227, 75%, 14%);
-  --colorNeutral-8: hsl(226, 25%, 17%);
-  --colorNeutral-7: hsl(225, 23%, 24%);
-  --colorNeutral-6: hsl(226, 11%, 37%);
-  --colorNeutral-3: hsl(0, 0%, 78%);
-  --colorNeutral-2: hsl(217, 61%, 90%);
-  --colorNeutral-1: hsl(0, 0%, 93%);
-  --colorNeutral-0: hsl(200, 60%, 99%);
+  --color-surface: hsl(227, 75%, 14%);
+  --color-surface-alt: hsl(226, 25%, 17%);
+  --color-surface-muted: hsl(225, 23%, 24%);
+  --color-border: hsl(226, 11%, 37%);
+  --color-text-muted: hsl(0, 0%, 78%);
+  --color-background: hsl(200, 60%, 99%);
+  --color-background-alt: hsl(0, 0%, 93%);
+  --color-background-soft: hsl(217, 61%, 90%);
+  --color-accent: hsl(3, 86%, 64%);
+  --color-accent-hover: hsl(3, 71%, 56%);
+  --color-accent-active: hsl(3, 77%, 44%);
+  --gradient-ui: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
+}
 
-  --colorRed-4: hsl(3, 86%, 64%);
-  --colorRed-5: hsl(3, 71%, 56%);
-  --colorRed-7: hsl(3, 77%, 44%);
-
-  -colorlightgradient: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
-
-  --colorDarkgradient: linear-gradient(180deg, #040918 0%, #091540 100%);
+/* Dark Mode Variables */
+.dark {
+  --color-surface: hsl(200, 60%, 99%);
+  --color-surface-alt: hsl(0, 0%, 93%);
+  --color-surface-muted: hsl(217, 61%, 90%);
+  --color-border: hsl(0, 0%, 78%);
+  --color-text-muted: hsl(226, 11%, 37%);
+  --color-background-soft: hsl(225, 23%, 24%);
+  --color-background-alt: hsl(226, 25%, 17%);
+  --color-background: hsl(227, 75%, 14%);
+  --color-accent: hsl(3, 86%, 64%);
+  --color-accent-hover: hsl(3, 71%, 56%);
+  --color-accent-active: hsl(3, 77%, 44%);
+  --gradient-ui: linear-gradient(180deg, #040918 0%, #091540 100%);
 }
