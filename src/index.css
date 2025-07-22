@@ -5,8 +5,12 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 
-/* Light Mode Variables */
 :root {
+  --color-surface: hsl(0, 0%, 100%);
+}
+
+/* Light Mode Variables */
+.light {
   --color-surface: hsl(227, 75%, 14%);
   --color-surface-alt: hsl(226, 25%, 17%);
   --color-surface-muted: hsl(225, 23%, 24%);
