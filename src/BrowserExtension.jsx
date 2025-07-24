@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import logo from "./images/logo.svg";
+import logoDark from "./images/logoDark.svg";
 import iconMoon from "./images/icon-moon.svg";
 import iconSun from "./images/icon-sun.svg";
 import "./index.css";
@@ -156,23 +157,23 @@ export default function BrowserExtension() {
   };
 
   return (
-    <div className="w-full min-h-screen pb-8 bg-[var(--color-background)] text-[var(--color-border)] transition-colors duration-300">
+    <div className="w-full min-h-screen pb-8 bg-ui-gradient text-[var(--color-border)] transition-colors duration-300">
       <main className="container w-[85%] mx-auto">
         {/* Navbar */}
-        <header className="w-full pt-6">
-          <section className="w-full p-4 flex items-center justify-between bg-[var(--color-background-soft)] rounded-xl">
-            <img src={logo} alt="logo" />
+        <nav className="w-full pt-6">
+          <section className="w-full p-3 flex items-center justify-between bg-[var(--color-background-alt)] rounded-3xl">
+            <img src={darkMode ? logoDark : logo} alt="logo" />
             <div
-              className="w-12 h-12 rounded-xl bg-[var(--color-background-alt)] flex items-center justify-center cursor-pointer"
+              className="w-12 h-12 rounded-xl bg-[var(--color-background-soft)] border-[var(--color-background-soft)] flex items-center justify-center cursor-pointer border-2 focus:border-[var(--color-accent)] hover:bg-[var(--color-text-muted)]"
               onClick={toggleTheme}
             >
               <img src={darkMode ? iconSun : iconMoon} alt="Toggle theme" />
             </div>
           </section>
-        </header>
+        </nav>
 
         {/* Header Section */}
-        <section className="w-full flex flex-col gap-4 md:flex-row justify-between items-center text-center font-bold mb-4 mt-10 pt-4 pb-4">
+        <header className="w-full flex flex-col gap-4 md:flex-row justify-between items-center text-center font-bold mb-4 mt-10 pt-4 pb-4 text-[var(--color-surface)]">
           <h1 className="text-3xl whitespace-nowrap">Extensions List</h1>
           <article className="flex gap-4">
             <ExtensionButton name="All" onClick={() => setFilter("All")} />
@@ -185,7 +186,7 @@ export default function BrowserExtension() {
               onClick={() => setFilter("Inactive")}
             />
           </article>
-        </section>
+        </header>
 
         {/* Extension Cards */}
         <section className="w-full grid md:grid-cols-3 gap-4">

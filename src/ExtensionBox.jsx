@@ -10,12 +10,14 @@ export default function ExtensionBox({
   removeExtension,
 }) {
   return (
-    <section className="w-full bg-[var(--color-background-soft)] p-4 flex flex-col gap-10 rounded-2xl justify-start items-start">
+    <section className="w-full bg-[var(--color-background-alt)] p-4 flex flex-col gap-10 rounded-2xl justify-start items-start">
       {/* Header */}
       <article className="w-fit flex items-start gap-4">
         <img src={icon} alt="icon" className="w-12 h-12" />
         <section className="flex flex-col gap-1">
-          <p className="text-xl font-bold">{title}</p>
+          <p className="text-xl font-bold text-[var(--color-surface)] ">
+            {title}
+          </p>
           <p className="text-sm text-[var(--color-text)]">{paragraph}</p>
         </section>
       </article>
@@ -24,7 +26,7 @@ export default function ExtensionBox({
       <section className="flex justify-between items-center w-full">
         <button
           onClick={() => removeExtension(id)}
-          className="px-4 py-2 text-sm border-2 rounded-3xl border-[var(--color-text-muted)] cursor-pointer"
+          className="px-4 py-2 text-sm border-2 rounded-3xl border-[var(--color-text-muted)] cursor-pointer hover:bg-[var(--color-accent)] hover:text-[var(--color-background)] text-[var(--color-surface)] "
         >
           Remove
         </button>
